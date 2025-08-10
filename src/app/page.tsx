@@ -29,13 +29,15 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <Image
-          src="/logo.png"
-          alt="Prime Interior Solutions NZ Logo"
-          width={48}
-          height={48}
-          className={styles.logo}
-        />
+        <div className={styles.logoWrapper}>
+          <Image
+            src="/logo.png"
+            alt="Prime Interior Solutions NZ Logo"
+            width={150}
+            height={150}
+            className={styles.logo}
+          />
+        </div>
         <h1 className={styles.title}>Prime Interior Solutions NZ</h1>
       </header>
 
