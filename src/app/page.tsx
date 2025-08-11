@@ -78,12 +78,12 @@ export default function Home() {
           </li>
           <li>
             <a href="https://builderscrack.co.nz/tradies/1yfg6pr0/prime-interior-solutions" target="_blank" rel="noopener noreferrer" aria-label="Website 1">
-              <Image src="/link.svg" alt="Builderscrack" width={24} height={24} /> Builderscrack Profile
+              <Image src="/builderscrack.png" alt="Builderscrack" width={24} height={24} /> Builderscrack Business Profile
             </a>
           </li>
           <li>
-            <a href="https://builderscrack.co.nz/tradies/1yfg6pr0/prime-interior-solutions" target="_blank" rel="noopener noreferrer" aria-label="Website 2">
-              <Image src="/link.svg" alt="No Cowboys" width={24} height={24} /> No Cowboys Profile
+            <a href="https://www.nocowboys.co.nz/businesses/prime-interior-solutions-ltd" target="_blank" rel="noopener noreferrer" aria-label="Website 2">
+              <Image src="/nocowboys.png" alt="NoCowboys" width={24} height={24} /> NoCowboys Business Profile
             </a>
           </li>
         </ul>
