@@ -28,17 +28,27 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        <div className={styles.logoWrapper}>
+      <header className={styles.headerBar}>
+        <button className={styles.sidebarBtn} aria-label="Open sidebar">
+          <span />
+          <span />
+          <span />
+        </button>
+        <div className={styles.logoAndTitle}>
           <Image
             src="/logo.png"
-            alt="Prime Interior Solutions NZ Logo"
-            width={150}
-            height={150}
+            alt="Logo"
+            width={90}
+            height={90}
             className={styles.logo}
           />
+          <div className={styles.titleBlock}>
+            <h1 className={styles.title}>Prime Interior Solutions</h1>
+            <div className={styles.tagline}>
+              <span>Residential Building, Plastering, Painting & Decorating</span>
+            </div>
+          </div>
         </div>
-        <h1 className={styles.title}>Prime Interior Solutions NZ</h1>
       </header>
 
       <main className={styles.main}>
@@ -68,7 +78,7 @@ export default function Home() {
           </li>
           <li>
             <a href="https://builderscrack.co.nz/tradies/1yfg6pr0/prime-interior-solutions" target="_blank" rel="noopener noreferrer" aria-label="Website 1">
-              <Image src="/link.svg" alt="Builders Crack" width={24} height={24} /> Builders Crack Profile
+              <Image src="/link.svg" alt="Builderscrack" width={24} height={24} /> Builderscrack Profile
             </a>
           </li>
           <li>
