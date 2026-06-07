@@ -1,31 +1,8 @@
-"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-import { useState } from "react";
-
-const testimonials = [
-  {
-    name: "Alice Smith",
-    text: "Prime Interior Solutions transformed my home! Highly recommended.",
-  },
-  {
-    name: "John Doe",
-    text: "Professional, reliable, and creative. Loved working with the team.",
-  },
-  {
-    name: "Maria Garcia",
-    text: "Excellent service and beautiful results. Will hire again!",
-  },
-];
+import TestimonialCarousel from "./components/TestimonialCarousel";
 
 export default function Home() {
-  const [current, setCurrent] = useState(0);
-
-  const prevTestimonial = () =>
-    setCurrent((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
-  const nextTestimonial = () =>
-    setCurrent((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
-
   return (
     <div className={styles.container}>
       <header className={styles.headerBar}>
@@ -52,18 +29,7 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <section className={styles.carousel}>
-          <button onClick={prevTestimonial} aria-label="Previous testimonial" className={styles.carouselBtn}>
-            &#8592;
-          </button>
-          <div className={styles.testimonial}>
-            <p className={styles.testimonialText}>"{testimonials[current].text}"</p>
-            <span className={styles.testimonialName}>- {testimonials[current].name}</span>
-          </div>
-          <button onClick={nextTestimonial} aria-label="Next testimonial" className={styles.carouselBtn}>
-            &#8594;
-          </button>
-        </section>
+        <TestimonialCarousel />
 
         <ul className={styles.socialsList}>
           <li>
