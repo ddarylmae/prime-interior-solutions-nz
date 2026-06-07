@@ -1,0 +1,276 @@
+.section {
+  background: #f2f2f2;
+  padding: 4rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sectionLabel {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #5c5c9e;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 3rem;
+}
+
+.highlight {
+  color: #e8a000;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Rating summary --- */
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+.excellent {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #111;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.summaryStars {
+  display: flex;
+  gap: 2px;
+}
+
+.starFilled {
+  color: #fbbc04;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.starEmpty {
+  color: #ccc;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.reviewCount {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  text-align: center;
+}
+
+.googleLogo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-top: 0.2rem;
+}
+
+.gBlue   { color: #4285F4; }
+.gRed    { color: #EA4335; }
+.gYellow { color: #FBBC05; }
+.gGreen  { color: #34A853; }
+
+/* --- Carousel --- */
+
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.navBtn {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #555;
+  transition: box-shadow 0.15s, color 0.15s;
+}
+
+.navBtn:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  color: #111;
+}
+
+.cards {
+  display: flex;
+  gap: 1.25rem;
+  flex: 1;
+  min-width: 0;
+  align-items: stretch;
+}
+
+/* --- Card --- */
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 1.4rem 1.25rem;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatarImg {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatarInitial {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #5c5c9e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.authorInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.authorName {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #111;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reviewDate {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0;
+}
+
+.cardStars {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cardStarRow {
+  display: flex;
+  gap: 1px;
+}
+
+.cardStarFilled {
+  color: #fbbc04;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.cardStarEmpty {
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.verifiedBadge {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.reviewText {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.55;
+  flex: 1;
+}
+
+.readMore {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.85rem;
+  color: #888;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.readMore:hover {
+  color: #333;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 900px) {
+  .body {
+    flex-direction: column;
+  }
+  .summary {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: unset;
+    gap: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards .card:nth-child(n+2) {
+    display: none;
+  }
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+}
