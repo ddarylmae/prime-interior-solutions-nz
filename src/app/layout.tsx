@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const openSans = Open_Sans({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-open-sans",
-  weight: ["400", "700"], // Add weights you need
+  variable: "--font-montserrat",
+  weight: ["400", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={openSans.className}>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }

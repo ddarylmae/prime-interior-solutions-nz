@@ -9,21 +9,16 @@ export default async function Home() {
   return (
     <div className={styles.container}>
       <header className={styles.headerBar}>
-        <button className={styles.sidebarBtn} aria-label="Open sidebar">
-          <span />
-          <span />
-          <span />
-        </button>
         <div className={styles.logoAndTitle}>
           <Image
-            src="/logo.png"
+            src="/logo-img.png"
             alt="Logo"
             width={90}
             height={90}
             className={styles.logo}
           />
           <div className={styles.titleBlock}>
-            <h1 className={styles.title}>Prime Interior Solutions</h1>
+            <h2 className={styles.title}>Prime Interior Solutions</h2>
             <div className={styles.tagline}>
               <span>
                 Residential Building, Plastering, Painting & Decorating
