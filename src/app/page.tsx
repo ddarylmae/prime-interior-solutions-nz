@@ -18,7 +18,10 @@ export default async function Home() {
             className={styles.logo}
           />
           <div className={styles.titleBlock}>
-            <h2 className={styles.title}>Prime Interior Solutions</h2>
+            <h1 className={styles.title}>
+              <span className={styles.titleMain}>Prime Interior</span>
+              <span className={styles.titleSub}>Solutions</span>
+            </h1>
             <div className={styles.tagline}>
               <span>
                 Residential Building, Plastering, Painting & Decorating
