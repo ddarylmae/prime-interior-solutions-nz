@@ -511,6 +511,32 @@
 
 @media (min-width: 768px) {
   /* Header */
+  .header {
+    padding: 1.25rem 2.5rem;
+  }
+
+  .headerActions {
+    gap: 0.875rem;
+  }
+
+  .phoneBtn {
+    padding: 0.7rem 1.375rem;
+    font-size: 0.9rem;
+  }
+
+  .quoteBtn {
+    padding: 0.7rem 1.625rem;
+    font-size: 0.9rem;
+  }
+
+  .brandMain {
+    font-size: 1rem;
+  }
+
+  .brandSub {
+    font-size: 0.72rem;
+  }
+
   .phoneBtnLabel {
     display: inline;
   }
