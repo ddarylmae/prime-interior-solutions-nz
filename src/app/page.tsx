@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-const PHONE = "021 XXX XXXX"; // TODO: Replace with actual phone number
-const PHONE_HREF = "tel:+640210000000"; // TODO: Replace with actual number
+const PHONE = "0210 716 861";
+const PHONE_HREF = "tel:+640210716861";
 
 export default function Home() {
   return (
@@ -198,6 +198,14 @@ export default function Home() {
               <PhoneIcon />
               {PHONE}
             </a>
+            {/* TODO update email address */}
+            <a
+              href="mailto:primeinteriorsolutions@outlook.com"
+              className={styles.contactEmailBtn}
+            >
+              <MailIcon />
+              Email us
+            </a>
           </div>
           <div className={styles.socialRow}>
             <a
@@ -233,7 +241,7 @@ export default function Home() {
               aria-label="Builderscrack"
             >
               <Image
-                src="/builderscrack.png"
+                src="/builders-crack.png"
                 alt="Builderscrack"
                 width={28}
                 height={28}
@@ -246,7 +254,7 @@ export default function Home() {
               aria-label="NoCowboys"
             >
               <Image
-                src="/nocowboys.png"
+                src="/no-cowboys.png"
                 alt="NoCowboys"
                 width={28}
                 height={28}
@@ -350,6 +358,25 @@ function ChatIcon() {
       aria-hidden="true"
     >
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    </svg>
+  );
+}
+
+function MailIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="M2 7l10 7 10-7" />
     </svg>
   );
 }

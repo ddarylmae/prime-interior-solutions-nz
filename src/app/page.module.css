@@ -402,7 +402,7 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
   flex-wrap: wrap;
 }
 
@@ -425,6 +425,27 @@
 .contactPhoneBtn:hover {
   background: #b08516;
   transform: translateY(-2px);
+}
+
+.contactEmailBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.contactEmailBtn:hover {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .socialRow {
