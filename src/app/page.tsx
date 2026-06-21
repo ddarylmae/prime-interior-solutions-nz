@@ -40,15 +40,19 @@ export default function Home() {
 
         {/* Shown only on desktop */}
         <div className={styles.heroContent}>
-          <p className={styles.heroEyebrow}>Your Trusted New Zealand</p>
+          <p className={styles.heroEyebrow}>Trusted across New Zealand</p>
+          {/** TODO: update copy to something like:
+           * Detail-focused workmanship you can count on. We bring precision
+              and pride to every job, no matter the size or scope.
+           */}
           <h1 className={styles.heroHeading}>
-            Interior &amp; Plastering
+            Plastering &amp; Painting
             <br />
-            Specialists
+            You Can Trust
           </h1>
           <p className={styles.heroDesc}>
-            Professional plastering, painting, and interior solutions. Quality
-            workmanship you can count on.
+            Smooth finishes, durable coatings, and detail-focused workmanship
+            for homes and commercial spaces — built to last.
           </p>
           <div className={styles.heroCtas}>
             <a href="#contact" className={styles.heroPrimary}>
@@ -72,16 +76,17 @@ export default function Home() {
             height={80}
           />
         </div>
-        <p className={styles.introEyebrow}>PROFESSIONAL</p>
+        <p className={styles.introEyebrow}>TRUSTED SPECIALISTS</p>
         <h2 className={styles.introTitle}>
-          Interior &amp; Plastering
+          Plastering &amp; Painting
           <br />
-          Solutions<span className={styles.dot}>.</span>
+          Specialists<span className={styles.dot}>.</span>
         </h2>
         <p className={styles.introDesc}>
-          At Prime Interior Solutions we provide professional plastering,
-          painting and interior decorating services across New Zealand. We pride
-          ourselves on quality results for every project, big or small.
+          We&apos;re a trusted plastering and painting company specialising in
+          high-quality home and commercial renovations across New Zealand. We
+          bring precision, reliability, and pride to every job — from a single
+          room to an entire property.
         </p>
         <div className={styles.introCtas}>
           <a href="#contact" className={styles.ctaPrimary}>
@@ -101,11 +106,11 @@ export default function Home() {
             <div className={styles.featureIconWrap}>
               <StarIcon />
             </div>
-            <h3 className={styles.featureTitle}>Quality Guaranteed</h3>
+            <h3 className={styles.featureTitle}>Smooth, Lasting Finishes</h3>
             <p className={styles.featureDesc}>
-              We stand behind every job we complete. Our team takes pride in
-              delivering top-quality results that meet and exceed your
-              expectations.
+              Years of hands-on experience delivering smooth finishes and
+              durable coatings that stand the test of time and add real value to
+              your property.
             </p>
           </div>
 
@@ -114,11 +119,12 @@ export default function Home() {
               <BrushIcon />
             </div>
             <h3 className={styles.featureTitle}>
-              Expert Plastering &amp; Painting
+              Home &amp; Commercial Renovations
             </h3>
             <p className={styles.featureDesc}>
-              Specialists in interior plastering, painting, and decorating. From
-              minor repairs to full renovations — done to a high standard.
+              Specialists in plastering and painting for residential and
+              commercial spaces — from restoring a single room to upgrading an
+              entire property.
             </p>
           </div>
 
@@ -138,6 +144,7 @@ export default function Home() {
       </section>
 
       {/* ===== SERVICES ===== */}
+      {/** TODO: update copy of the services before going live */}
       <section className={styles.services}>
         <div className={styles.servicesContent}>
           <span className={styles.eyebrow}>WHAT WE DO</span>
