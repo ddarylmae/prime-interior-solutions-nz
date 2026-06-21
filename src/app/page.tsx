@@ -143,6 +143,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== TRUST BAR ===== */}
+      <section className={styles.trustBar}>
+        <div className={styles.trustBarInner}>
+          <span className={styles.trustNum}>9+</span>
+          <div className={styles.trustText}>
+            <span className={styles.trustLabel}>Years in Business</span>
+            <span className={styles.trustSub}>
+              Trusted by homeowners and commercial clients across Auckland.
+            </span>
+          </div>
+        </div>
+      </section>
+
       {/* ===== SERVICES ===== */}
       {/** TODO: update copy of the services before going live */}
       <section className={styles.services}>
