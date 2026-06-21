@@ -227,45 +227,24 @@ export default function Home() {
               Email us
             </a>
           </div>
-          <div className={styles.socialRow}>
-            <a
-              href="https://facebook.com/primeinteriorsolutionsnz"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-              <Image
-                src="/facebook.png"
-                alt="Facebook"
-                width={28}
-                height={28}
-              />
-            </a>
-            <a
-              href="https://instagram.com/prime.interior"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <Image
-                src="/instagram.png"
-                alt="Instagram"
-                width={28}
-                height={28}
-              />
-            </a>
+          <div className={styles.socialGrid}>
             <a
               href="https://builderscrack.co.nz/tradies/1yfg6pr0/prime-interior-solutions"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Builderscrack"
             >
-              <Image
-                src="/builders-crack.png"
-                alt="Builderscrack"
-                width={28}
-                height={28}
-              />
+              <span className={styles.socialIconCircle}><SocialBuilderscrackIcon /></span>
+              <span className={styles.socialName}>Builderscrack</span>
+            </a>
+            <a
+              href="https://facebook.com/primeinteriorsolutionsnz"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <span className={styles.socialIconCircle}><SocialFacebookIcon /></span>
+              <span className={styles.socialName}>Facebook</span>
             </a>
             <a
               href="https://www.nocowboys.co.nz/businesses/prime-interior-solutions-ltd"
@@ -273,12 +252,17 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label="NoCowboys"
             >
-              <Image
-                src="/no-cowboys.png"
-                alt="NoCowboys"
-                width={28}
-                height={28}
-              />
+              <span className={styles.socialIconCircle}><SocialNoCowboysIcon /></span>
+              <span className={styles.socialName}>NoCowboys</span>
+            </a>
+            <a
+              href="https://instagram.com/prime.interior"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <span className={styles.socialIconCircle}><SocialInstagramIcon /></span>
+              <span className={styles.socialName}>Instagram</span>
             </a>
           </div>
         </div>
@@ -370,6 +354,49 @@ function ChatIcon() {
       aria-hidden="true"
     >
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    </svg>
+  );
+}
+
+function SocialFacebookIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  );
+}
+
+function SocialInstagramIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
+
+function SocialBuilderscrackIcon() {
+  return (
+    <svg
+      width="22"
+      height="14"
+      viewBox="0 0 28 18"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      {/* Checkmark */}
+      <polygon points="0,9 3,5.5 9,13 15,4 18,4 9,17 0,12.5" />
+      {/* Triangle wedge */}
+      <polygon points="15,4 28,1 28,17 21,17" />
+    </svg>
+  );
+}
+
+function SocialNoCowboysIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
     </svg>
   );
 }

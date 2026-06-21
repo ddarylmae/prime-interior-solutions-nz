@@ -56,7 +56,6 @@
   font-size: 0.6rem;
   font-weight: 400;
   color: #363b52;
-  letter-spacing: 0.2em;
   text-transform: uppercase;
   letter-spacing: 0.86em;
 }
@@ -575,23 +574,48 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.socialRow {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  align-items: center;
+.socialGrid {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.875rem 2rem;
 }
 
-.socialRow a {
-  opacity: 0.75;
+.socialGrid a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.socialGrid a:hover .socialIconCircle {
+  background: #b08516;
+  transform: translateY(-2px);
+}
+
+.socialGrid a:hover .socialName {
+  color: #ffffff;
+}
+
+.socialIconCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #c4991a;
+  border-radius: 50%;
+  color: #ffffff;
+  flex-shrink: 0;
   transition:
-    opacity 0.2s,
+    background 0.2s,
     transform 0.15s;
 }
 
-.socialRow a:hover {
-  opacity: 1;
-  transform: translateY(-2px);
+.socialName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s;
 }
 
 /* ===== FOOTER ===== */
@@ -635,7 +659,7 @@
   font-size: 0.58rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.85em;
   text-transform: uppercase;
 }
 
@@ -843,6 +867,10 @@
 
   .contactTitle {
     font-size: 2.25rem;
+  }
+
+  .socialGrid {
+    grid-template-columns: repeat(4, auto);
   }
 
   /* Footer */
