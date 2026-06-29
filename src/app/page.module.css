@@ -659,7 +659,7 @@
   font-size: 0.58rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 0.85em;
+  letter-spacing: 0.84em;
   text-transform: uppercase;
 }
 
@@ -878,6 +878,18 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+  }
+
+  .footerBrandMain {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .footerBrandSub {
+    letter-spacing: 0.83em;
   }
 }
 
