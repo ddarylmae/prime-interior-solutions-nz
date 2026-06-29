@@ -115,7 +115,7 @@ export default async function Home() {
           <div className={styles.trustText}>
             <span className={styles.trustLabel}>Years in Business</span>
             <span className={styles.trustSub}>
-              Trusted by homeowners and commercial clients across Auckland.
+              Trusted by homeowners across Auckland.
             </span>
           </div>
         </div>
@@ -133,37 +133,35 @@ export default async function Home() {
               <span className={styles.serviceNum}>01</span>
               <h3 className={styles.serviceTitle}>Plastering</h3>
               <p className={styles.serviceDesc}>
-                Interior and exterior plastering, stopping, and solid plaster
-                for new builds and renovations.
+                Professional interior plastering, Level 4 & Level 5 finishes,
+                GIB stopping, crack repairs, and ceiling & wall repairs.
               </p>
             </div>
 
             <div className={styles.serviceCard}>
               <span className={styles.serviceNum}>02</span>
-              <h3 className={styles.serviceTitle}>Painting &amp; Decorating</h3>
+              <h3 className={styles.serviceTitle}>Painting</h3>
               <p className={styles.serviceDesc}>
-                Full interior and exterior painting including feature walls,
-                trims, and ceiling work.
+                Interior and exterior painting, including walls, ceilings,
+                trims, doors, and full home repaints with premium finishes.
               </p>
             </div>
 
             <div className={styles.serviceCard}>
               <span className={styles.serviceNum}>03</span>
-              <h3 className={styles.serviceTitle}>Interior Solutions</h3>
+              <h3 className={styles.serviceTitle}>Surface Preparation</h3>
               <p className={styles.serviceDesc}>
-                Wallpaper hanging, texture coating, colour consultation, and
-                finishing touches for your space.
+                Wallpaper removal, pigment sealing, water damage repairs,
+                surface preparation, and paint-ready finishes.
               </p>
             </div>
 
             <div className={styles.serviceCard}>
               <span className={styles.serviceNum}>04</span>
-              <h3 className={styles.serviceTitle}>
-                Residential &amp; Commercial
-              </h3>
+              <h3 className={styles.serviceTitle}>Residential Services</h3>
               <p className={styles.serviceDesc}>
-                Serving homeowners, property managers, and builders across New
-                Zealand with reliable results.
+                Providing reliable plastering and painting services for
+                homeowners, landlords, and property managers across Auckland.
               </p>
             </div>
           </div>
