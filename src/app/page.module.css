@@ -83,9 +83,15 @@
   white-space: nowrap;
 }
 
-.phoneBtn:hover {
-  background: #363b52;
-  color: #ffffff;
+.phoneBtn:visited {
+  color: #363b52;
+}
+
+@media (hover: hover) {
+  .phoneBtn:hover {
+    background: #363b52;
+    color: #ffffff;
+  }
 }
 
 .phoneBtnLabel {
