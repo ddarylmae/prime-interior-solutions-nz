@@ -238,50 +238,6 @@
 
 /* ===== INTRO — mobile below-hero section ===== */
 
-.intro {
-  display: none;
-  padding: 2rem 1.5rem 2rem;
-  background: #ffffff;
-}
-
-.introLogoWrap {
-  margin-bottom: 1.25rem;
-}
-
-.introEyebrow {
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: #363b52;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.introTitle {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #363b52;
-  line-height: 1.15;
-  margin-bottom: 1rem;
-}
-
-.dot {
-  color: #c4991a;
-}
-
-.introDesc {
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.7;
-  margin-bottom: 1.75rem;
-}
-
-.introCtas {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
 
 .ctaPrimary {
   display: inline-flex;
@@ -544,8 +500,10 @@
 .contactPhoneBtn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.875rem 2rem;
+  min-width: 180px;
   background: #c4991a;
   color: #ffffff;
   border-radius: 50px;
@@ -565,8 +523,10 @@
 .contactEmailBtn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.875rem 2rem;
+  min-width: 180px;
   border: 2px solid rgba(255, 255, 255, 0.6);
   color: #ffffff;
   border-radius: 50px;
@@ -687,10 +647,7 @@
    =================================== */
 
 @media (min-width: 640px) {
-  .introCtas {
-    flex-direction: row;
-  }
-  .servicesGrid {
+.servicesGrid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -830,12 +787,7 @@
     background: rgba(255, 255, 255, 0.1);
   }
 
-  /* Hide mobile intro, content lives in hero on desktop */
-  .intro {
-    display: none;
-  }
-
-  /* Trust bar */
+/* Trust bar */
   .trustBar {
     padding: 3rem 4%;
     text-align: left;

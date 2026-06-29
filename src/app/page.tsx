@@ -40,19 +40,13 @@ export default function Home() {
 
         {/* Shown only on desktop */}
         <div className={styles.heroContent}>
-          <p className={styles.heroEyebrow}>Trusted across New Zealand</p>
-          {/** TODO: update copy to something like:
-           * Detail-focused workmanship you can count on. We bring precision
-              and pride to every job, no matter the size or scope.
-           */}
+          <p className={styles.heroEyebrow}>Trusted by Auckland Homeowners</p>
           <h1 className={styles.heroHeading}>
-            Plastering &amp; Painting
-            <br />
-            You Can Trust
+            Premium Plastering &amp; Painting
           </h1>
           <p className={styles.heroDesc}>
-            Smooth finishes, durable coatings, and detail-focused workmanship
-            for homes and commercial spaces — built to last.
+            Level 5 plastering, premium painting, and meticulous workmanship for
+            Auckland homes. Built to last.
           </p>
           <div className={styles.heroCtas}>
             <a href="#contact" className={styles.heroPrimary}>
@@ -66,39 +60,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== INTRO — mobile only, appears below hero ===== */}
-      <section className={styles.intro}>
-        <div className={styles.introLogoWrap}>
-          <Image
-            src="/logo-img.png"
-            alt="Prime Interior Solutions"
-            width={80}
-            height={80}
-          />
-        </div>
-        <p className={styles.introEyebrow}>TRUSTED SPECIALISTS</p>
-        <h2 className={styles.introTitle}>
-          Plastering &amp; Painting
-          <br />
-          Specialists<span className={styles.dot}>.</span>
-        </h2>
-        <p className={styles.introDesc}>
-          We&apos;re a trusted plastering and painting company specialising in
-          high-quality home and commercial renovations across New Zealand. We
-          bring precision, reliability, and pride to every job — from a single
-          room to an entire property.
-        </p>
-        <div className={styles.introCtas}>
-          <a href="#contact" className={styles.ctaPrimary}>
-            Get a Quote
-          </a>
-          <a href={PHONE_HREF} className={styles.ctaPhone}>
-            <PhoneIcon />
-            {PHONE}
-          </a>
-        </div>
-      </section>
-
       {/* ===== FEATURES ===== */}
       <section className={styles.features}>
         <div className={styles.featuresGrid}>
@@ -106,11 +67,11 @@ export default function Home() {
             <div className={styles.featureIconWrap}>
               <StarIcon />
             </div>
-            <h3 className={styles.featureTitle}>Smooth, Lasting Finishes</h3>
+            <h3 className={styles.featureTitle}>Quality Workmanship</h3>
             <p className={styles.featureDesc}>
-              Years of hands-on experience delivering smooth finishes and
-              durable coatings that stand the test of time and add real value to
-              your property.
+              Years of hands-on experience delivering high-quality plastering
+              and painting. We take pride in clean workmanship, attention to
+              detail, and leaving every home tidy.
             </p>
           </div>
 
@@ -119,12 +80,12 @@ export default function Home() {
               <BrushIcon />
             </div>
             <h3 className={styles.featureTitle}>
-              Home &amp; Commercial Renovations
+              Interior Plastering &amp; Painting
             </h3>
             <p className={styles.featureDesc}>
-              Specialists in plastering and painting for residential and
-              commercial spaces — from restoring a single room to upgrading an
-              entire property.
+              From small repairs to full interior projects, we provide
+              professional plastering and painting tailored to your home and
+              budget.
             </p>
           </div>
 
@@ -132,12 +93,11 @@ export default function Home() {
             <div className={styles.featureIconWrap}>
               <ChatIcon />
             </div>
-            <h3 className={styles.featureTitle}>
-              Communication &amp; Accessibility
-            </h3>
+            <h3 className={styles.featureTitle}>Reliable Communication</h3>
             <p className={styles.featureDesc}>
-              We keep you informed every step of the way. Easy to reach and
-              quick to respond — your project is always our priority.
+              From your first quote to the final walkthrough, we keep you
+              informed with clear communication, reliable scheduling, and prompt
+              responses.
             </p>
           </div>
         </div>
