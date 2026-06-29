@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 const PHONE = "0210 716 861";
@@ -9,7 +10,7 @@ export default function Home() {
     <div className={styles.wrapper}>
       {/* ===== HEADER ===== */}
       <header className={styles.header}>
-        <div className={styles.headerLogo}>
+        <Link href="/" className={styles.headerLogo}>
           <Image
             src="/logo-img.png"
             alt="Prime Interior Solutions Logo"
@@ -21,7 +22,7 @@ export default function Home() {
             <span className={styles.brandMain}>Prime Interior</span>
             <span className={styles.brandSub}>Solutions</span>
           </div>
-        </div>
+        </Link>
         <div className={styles.headerActions}>
           <a href={PHONE_HREF} className={styles.phoneBtn}>
             <PhoneIcon />
@@ -187,6 +188,7 @@ export default function Home() {
               Email us
             </a>
           </div>
+          <br />
           <div className={styles.socialGrid}>
             <a
               href="https://builderscrack.co.nz/tradies/1yfg6pr0/prime-interior-solutions"
@@ -238,25 +240,10 @@ export default function Home() {
 
       {/* ===== FOOTER ===== */}
       <footer className={styles.footer}>
-        <div className={styles.footerInner}>
-          <div className={styles.footerBrand}>
-            <Image
-              src="/logo-img.png"
-              alt="Prime Interior Solutions"
-              width={36}
-              height={36}
-              className={styles.footerLogoImg}
-            />
-            <div className={styles.footerBrandText}>
-              <span className={styles.footerBrandMain}>Prime Interior</span>
-              <span className={styles.footerBrandSub}>Solutions</span>
-            </div>
-          </div>
-          <p className={styles.footerCopy}>
-            &copy; {new Date().getFullYear()} Prime Interior Solutions Ltd. All
-            rights reserved.
-          </p>
-        </div>
+        <p className={styles.footerCopy}>
+          &copy; {new Date().getFullYear()} Prime Interior Solutions Ltd. All
+          rights reserved.
+        </p>
       </footer>
     </div>
   );

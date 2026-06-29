@@ -33,6 +33,7 @@
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  text-decoration: none;
 }
 
 .headerLogoImg {
@@ -237,7 +238,6 @@
 }
 
 /* ===== INTRO — mobile below-hero section ===== */
-
 
 .ctaPrimary {
   display: inline-flex;
@@ -569,8 +569,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
+  width: 26px;
+  height: 26px;
   background: #c4991a;
   border-radius: 50%;
   color: #ffffff;
@@ -592,53 +592,11 @@
 .footer {
   background: #2a2e40;
   padding: 1.2rem 1.5rem;
-}
-
-.footerInner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.6rem;
   text-align: center;
 }
 
-.footerBrand {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.footerLogoImg {
-  width: 29px;
-  height: 29px;
-}
-
-.footerBrandText {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.footerBrandMain {
-  font-size: 0.625rem;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-}
-
-.footerBrandSub {
-  font-size: 0.6rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 0.54em;
-  text-transform: uppercase;
-}
-
 .footerCopy {
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.45);
 }
 
@@ -647,7 +605,7 @@
    =================================== */
 
 @media (min-width: 640px) {
-.servicesGrid {
+  .servicesGrid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -787,7 +745,7 @@
     background: rgba(255, 255, 255, 0.1);
   }
 
-/* Trust bar */
+  /* Trust bar */
   .trustBar {
     padding: 3rem 4%;
     text-align: left;
@@ -850,8 +808,8 @@
   }
 
   .socialIconCircle {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
   }
 
   .socialName {
@@ -861,35 +819,6 @@
   /* Footer */
   .footer {
     padding: 1.5rem 1.5rem;
-  }
-
-  .footerInner {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    gap: 0.75rem;
-  }
-
-  .footerBrand {
-    gap: 0.75rem;
-  }
-
-  .footerLogoImg {
-    width: 36px;
-    height: 36px;
-  }
-
-  .footerBrandMain {
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
-
-  .footerBrandSub {
-    font-size: 0.58rem;
-    letter-spacing: 0.83em;
   }
 
   .footerCopy {
