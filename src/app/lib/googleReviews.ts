@@ -8,53 +8,46 @@ export type Review = {
 
 const fallbackReviews: Review[] = [
   {
-    author_name: "Alice Smith",
+    author_name: "Roderick S.",
     rating: 5,
-    text: "Prime Interior Solutions transformed my home! Highly recommended. The plastering was flawless and the painting finish was immaculate.",
-    time: Date.now() / 1000 - 86400 * 30,
+    text: "Jerome is a model tradesman. Friendly, prompt and efficient, an excellent communicator, and with high quality workmanship. In response to my request for a quote, he made himself available, at short notice, for a site visit. His quote was very reasonable, and he always turned up on time over his four visits to complete the job. Jerome was very happy to offer his professional advice on any aspect of drywall preparation and decorating. I can thoroughly recommend Jerome to future clients.",
+    time: Date.now() / 1000 - 86400 * 14,
     profile_photo_url: "",
   },
   {
-    author_name: "John Doe",
+    author_name: "Sheralee A.",
     rating: 5,
-    text: "Professional, reliable, and creative. Loved working with the team. They finished on time and the quality exceeded my expectations.",
+    text: "Jerome was a pleasure to deal with. Great communication and very punctual. Jerome’s quality of work was to a very high standard. I wouldn’t hesitate to recommend him or use his services again in the future if needed.",
+    time: Date.now() / 1000 - 86400 * 35,
+    profile_photo_url: "",
+  },
+  {
+    author_name: "Kevin P.",
+    rating: 5,
+    text: "Gerome was very helpful and gave us suggestions on paint colours and finishes to suit the area. The final outcome has been more than satisfactory and would definitely use his services again. I highly recommend him for any paint or plaster job big or small that needs to be done.",
     time: Date.now() / 1000 - 86400 * 60,
     profile_photo_url: "",
   },
   {
-    author_name: "Maria Garcia",
+    author_name: "Tina S.",
     rating: 5,
-    text: "Excellent service and beautiful results. Will hire again! The interior decoration was stunning and really transformed the space.",
+    text: "Jerome was an absolute pleasure to deal with. Turned up when he said he would, completed work to a high standard, tidy and totally trustworthy. We will be calling in his services later in the year for further work to our house",
+    time: Date.now() / 1000 - 86400 * 90,
+    profile_photo_url: "",
+  },
+  {
+    author_name: "Roihario M.",
+    rating: 5,
+    text: "Highly recommended! Easy to communicate with, efficient, tidy, and respectful of the owner’s working hours. A pleasure to deal with.",
     time: Date.now() / 1000 - 86400 * 90,
     profile_photo_url: "",
   },
 ];
 
-export async function getGoogleReviews(): Promise<{
+export async function getFallbackReviews(): Promise<{
   reviews: Review[];
   rating: number;
   total: number;
 }> {
-  const apiKey = process.env.GOOGLE_PLACES_API_KEY;
-  const placeId = process.env.GOOGLE_PLACE_ID;
-
-  if (!apiKey || !placeId) {
-    return { reviews: fallbackReviews, rating: 5.0, total: 0 };
-  }
-
-  try {
-    const res = await fetch(
-      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,user_ratings_total,reviews&key=${apiKey}&reviews_sort=most_relevant`,
-      { next: { revalidate: 86400 } }
-    );
-    const data = await res.json();
-    if (data.status !== "OK") throw new Error(data.status);
-    return {
-      reviews: (data.result.reviews as Review[]) ?? fallbackReviews,
-      rating: data.result.rating ?? 5.0,
-      total: data.result.user_ratings_total ?? 0,
-    };
-  } catch {
-    return { reviews: fallbackReviews, rating: 5.0, total: 0 };
-  }
+  return { reviews: fallbackReviews, rating: 5.0, total: 0 };
 }

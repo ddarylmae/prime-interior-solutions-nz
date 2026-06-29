@@ -6,11 +6,6 @@ import type { Review } from "../lib/googleReviews";
 
 const VISIBLE = 3;
 
-function formatDate(unixSeconds: number): string {
-  const d = new Date(unixSeconds * 1000);
-  return `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
-}
-
 function CardStars({ rating }: { rating: number }) {
   return (
     <div className={styles.cardStarRow}>
@@ -76,7 +71,6 @@ function ReviewCard({ review }: { review: Review }) {
         )}
         <div className={styles.authorInfo}>
           <p className={styles.authorName}>{review.author_name}</p>
-          <p className={styles.reviewDate}>{formatDate(review.time)}</p>
         </div>
         <GoogleG />
       </div>
@@ -121,7 +115,8 @@ export default function TestimonialCarousel({
   );
 
   return (
-    <section className={styles.section}>
+    <div className={styles.section}>
+      <span className={styles.sectionLabel}>Reviews</span>
       <h3 className={styles.sectionTitle}>What our Clients say</h3>
       <div className={styles.body}>
         <div className={styles.carouselWrapper}>
@@ -149,6 +144,6 @@ export default function TestimonialCarousel({
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

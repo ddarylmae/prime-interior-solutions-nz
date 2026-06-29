@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import TestimonialCarousel from "./components/TestimonialCarousel";
+import { getFallbackReviews } from "./lib/googleReviews";
 
 const PHONE = "0210 716 861";
 const PHONE_HREF = "tel:+64210716861";
 
-export default function Home() {
+export default async function Home() {
+  const { reviews, rating, total } = await getFallbackReviews();
+
   return (
     <div className={styles.wrapper}>
       {/* ===== HEADER ===== */}
@@ -104,7 +108,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== TRUST BAR ===== */}
+      {/* ===== TRUST BAR + TESTIMONIALS ===== */}
       <section className={styles.trustBar}>
         <div className={styles.trustBarInner}>
           <span className={styles.trustNum}>9+</span>
@@ -115,6 +119,7 @@ export default function Home() {
             </span>
           </div>
         </div>
+        <TestimonialCarousel reviews={reviews} rating={rating} total={total} />
       </section>
 
       {/* ===== SERVICES ===== */}

@@ -1,30 +1,16 @@
 .section {
-  background: #f2f2f2;
-  padding: 4rem 2rem;
+  background: transparent;
+  padding: 2rem 0 0;
   width: 100%;
   box-sizing: border-box;
 }
 
 .sectionLabel {
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  color: #5c5c9e;
-  margin: 0 0 0.6rem;
-  text-transform: uppercase;
+  display: none;
 }
 
 .sectionTitle {
-  text-align: center;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #1a1a2e;
-  margin: 0 0 3rem;
-}
-
-.highlight {
-  color: #e8a000;
+  display: none;
 }
 
 .body {
@@ -143,6 +129,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  text-align: left;
 }
 
 .cardHeader {
@@ -160,7 +147,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #5c5c9e;
+  background: #363b52;
   color: #fff;
   font-weight: 700;
   font-size: 1.2rem;
@@ -272,5 +259,18 @@
   }
   .sectionTitle {
     font-size: 1.5rem;
+  }
+  .avatarInitial {
+    width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+  .avatarImg {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .cardHeader svg {
+    width: 18px;
+    height: 18px;
   }
 }
