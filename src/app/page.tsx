@@ -123,7 +123,6 @@ export default async function Home() {
       </section>
 
       {/* ===== SERVICES ===== */}
-      {/** TODO: update copy of the services before going live */}
       <section className={styles.services}>
         <div className={styles.servicesContent}>
           <span className={styles.eyebrow}>WHAT WE DO</span>
@@ -182,9 +181,8 @@ export default async function Home() {
               <PhoneIcon />
               {PHONE}
             </a>
-            {/* TODO update email address */}
             <a
-              href="mailto:primeinteriorsolutions@outlook.com"
+              href="mailto:prime.interiornz@outlook.com"
               className={styles.contactEmailBtn}
             >
               <MailIcon />
