@@ -277,6 +277,7 @@ export default function Home() {
               alt="Prime Interior Solutions"
               width={36}
               height={36}
+              className={styles.footerLogoImg}
             />
             <div className={styles.footerBrandText}>
               <span className={styles.footerBrandMain}>Prime Interior</span>
