@@ -36,8 +36,6 @@
 
 .headerLogoImg {
   object-fit: contain;
-  width: 37px;
-  height: 37px;
 }
 
 .headerBrand {
@@ -644,8 +642,8 @@
 }
 
 .footerLogoImg {
-  width: 29px;
-  height: 29px;
+  width: 29px !important;
+  height: 29px !important;
 }
 
 .footerBrandText {
@@ -692,11 +690,6 @@
   /* Header */
   .header {
     padding: 1.25rem 2.5rem;
-  }
-
-  .headerLogoImg {
-    width: 46px;
-    height: 46px;
   }
 
   .headerActions {
@@ -916,8 +909,8 @@
   }
 
   .footerLogoImg {
-    width: 36px;
-    height: 36px;
+    width: 36px !important;
+    height: 36px !important;
   }
 
   .footerBrandMain {
