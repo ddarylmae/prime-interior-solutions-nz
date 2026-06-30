@@ -50,8 +50,8 @@ export default async function Home() {
             Quality Plastering &amp; Painting
           </h1>
           <p className={styles.heroDesc}>
-            Level 5 plastering, premium painting, and meticulous workmanship for
-            Auckland homes. Built to last.
+            Level 5 plastering, top-quality painting, and meticulous workmanship
+            for Auckland homes. Built to last.
           </p>
           <div className={styles.heroCtas}>
             <a href="#contact" className={styles.heroPrimary}>
