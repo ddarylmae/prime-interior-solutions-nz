@@ -8,8 +8,7 @@ const montserrat = Montserrat({
   weight: ["400", "700", "800"],
 });
 
-// TODO: update when custom domain is live
-const SITE_URL = "https://prime-interior-solutions-nz.vercel.app";
+const SITE_URL = "https://primeinteriorsolutions.co.nz";
 const SITE_NAME = "Prime Interior Solutions NZ";
 const SITE_TITLE =
   "Prime Interior Solutions NZ | Plastering and Painting services in Auckland";
