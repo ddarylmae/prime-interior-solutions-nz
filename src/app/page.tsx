@@ -47,7 +47,7 @@ export default async function Home() {
         <div className={styles.heroContent}>
           <p className={styles.heroEyebrow}>Trusted by Auckland Homeowners</p>
           <h1 className={styles.heroHeading}>
-            Premium Plastering &amp; Painting
+            Quality Plastering &amp; Painting
           </h1>
           <p className={styles.heroDesc}>
             Level 5 plastering, premium painting, and meticulous workmanship for

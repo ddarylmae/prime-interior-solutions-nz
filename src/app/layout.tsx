@@ -12,9 +12,9 @@ const montserrat = Montserrat({
 const SITE_URL = "https://prime-interior-solutions-nz.vercel.app";
 const SITE_NAME = "Prime Interior Solutions NZ";
 const SITE_TITLE =
-  "Prime Interior Solutions NZ | Plasterer and Painter in Auckland";
+  "Prime Interior Solutions NZ | Plastering and Painting services in Auckland";
 const SITE_DESCRIPTION =
-  "Trusted plasterer and painter serving Auckland homeowners. Specialising in Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation. 9+ years experience. Get a free quote.";
+  "Plastering & Painting trusted by Auckland homeowners. 9+ years in business. Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation. Free quotes available.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -41,7 +41,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Prime Interior Solutions NZ",
   description:
-    "Trusted plasterer and painter serving Auckland homeowners. Specialising in Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation.",
+    "Plastering & Painting trusted by Auckland homeowners. 9+ years in business. Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation.",
   telephone: "+64210716861",
   email: "prime.interiornz@outlook.com",
   areaServed: {
