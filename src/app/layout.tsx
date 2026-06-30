@@ -9,12 +9,49 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Prime Interior Solutions NZ",
+  metadataBase: new URL("https://prime-interior-solutions-nz.vercel.app"), // TODO change this once domain is live
+  title: "Prime Interior Solutions NZ | Plasterer and Painter in Auckland",
   description:
-    "Prime Interior Solutions NZ - Plastering, Painting, and Interior Solutions",
+    "Trusted plasterer and painter serving Auckland homeowners. Specialising in Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation. 9+ years experience. Get a free quote.",
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    title: "Prime Interior Solutions NZ | Plasterer and Painter in Auckland",
+    description:
+      "Trusted plasterer and painter serving Auckland homeowners. Specialising in Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation. 9+ years experience. Get a free quote.",
+    url: "https://prime-interior-solutions-nz.vercel.app", // TODO change this once domain is live
+    siteName: "Prime Interior Solutions NZ",
+    images: [
+      {
+        url: "/logo.png",
+        alt: "Prime Interior Solutions NZ",
+      },
+    ],
+    locale: "en_NZ",
+    type: "website",
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Prime Interior Solutions NZ",
+  description:
+    "Trusted plasterer and painter serving Auckland homeowners. Specialising in Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation.",
+  telephone: "+64210716861",
+  email: "prime.interiornz@outlook.com",
+  areaServed: {
+    "@type": "City",
+    name: "Auckland",
+    "@id": "https://www.wikidata.org/wiki/Q37100",
+  },
+  sameAs: [
+    "https://facebook.com/primeinteriorsolutionsnz",
+    "https://instagram.com/prime.interior",
+    "https://builderscrack.co.nz/tradies/1yfg6pr0/prime-interior-solutions",
+    "https://www.nocowboys.co.nz/businesses/prime-interior-solutions-ltd",
+  ],
 };
 
 export default function RootLayout({
@@ -24,6 +61,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+      </head>
       <body className={montserrat.className}>{children}</body>
     </html>
   );
