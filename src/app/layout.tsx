@@ -8,28 +8,32 @@ const montserrat = Montserrat({
   weight: ["400", "700", "800"],
 });
 
+// TODO: update when custom domain is live
+const SITE_URL = "https://prime-interior-solutions-nz.vercel.app";
+const SITE_NAME = "Prime Interior Solutions NZ";
+const SITE_TITLE =
+  "Prime Interior Solutions NZ | Plasterer and Painter in Auckland";
+const SITE_DESCRIPTION =
+  "Trusted plasterer and painter serving Auckland homeowners. Specialising in Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation. 9+ years experience. Get a free quote.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://prime-interior-solutions-nz.vercel.app"), // TODO change this once domain is live
-  title: "Prime Interior Solutions NZ | Plasterer and Painter in Auckland",
-  description:
-    "Trusted plasterer and painter serving Auckland homeowners. Specialising in Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation. 9+ years experience. Get a free quote.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Prime Interior Solutions NZ | Plasterer and Painter in Auckland",
-    description:
-      "Trusted plasterer and painter serving Auckland homeowners. Specialising in Level 5 plastering, GIB stopping, interior & exterior painting, and surface preparation. 9+ years experience. Get a free quote.",
-    url: "https://prime-interior-solutions-nz.vercel.app", // TODO change this once domain is live
-    siteName: "Prime Interior Solutions NZ",
-    images: [
-      {
-        url: "/logo.png",
-        alt: "Prime Interior Solutions NZ",
-      },
-    ],
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    images: [{ url: "/logo.png", alt: SITE_NAME }],
     locale: "en_NZ",
     type: "website",
+  },
+  alternates: {
+    canonical: SITE_URL,
   },
 };
 
