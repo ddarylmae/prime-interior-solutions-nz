@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_NAME,
-    images: [{ url: "/logo.png", alt: SITE_NAME }],
     locale: "en_NZ",
     type: "website",
   },
